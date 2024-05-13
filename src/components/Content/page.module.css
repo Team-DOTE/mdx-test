@@ -1,0 +1,16 @@
+.content{
+    display: flex;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(161, 161, 163);
+    border-radius: 10px;
+    align-items: center;
+}
+.tag{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    
+}
