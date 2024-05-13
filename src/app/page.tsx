@@ -9,6 +9,11 @@ import Content from "@/components/Content/page";
 export default function Home() {
   return (
     <div>
+      <div className={styles.search}>
+        <Image src="/search.svg" alt="검색 이미지" width={20} height={20} />
+        <input className={styles.input} placeholder="검색할 상황을 입력해주세요."  />
+      </div>
+      
       <div>
         <div style={{ display: "flex" }}>
           {tags.map((tag, index) => (
