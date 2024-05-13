@@ -16,7 +16,7 @@ export default function Tags({ params }: { params: { slug: string } }) {
     <div>
       <div style={{ display: "flex" }}>
         {tags.map((tag, index) => (
-          <div key={index} style={{margin:"10px"}}>
+          <div key={index} style={{ margin: "5px" }}>
             <Tag link={tag.link} tag={tag.tag} />
           </div>
         ))}
@@ -25,7 +25,9 @@ export default function Tags({ params }: { params: { slug: string } }) {
         <div style={{ color: "gray", margin: "10px" }}>돌아가기</div>
       </Link>
       <div style={{ height: 20 }} />
-      <div style={{margin: "10px", fontSize:"20px"}}>{filterTags[0].count}</div>
+      <div style={{ margin: "10px", fontSize: "20px" }}>
+        {filterTags[0].count}
+      </div>
       <div style={{ height: 20 }} />
       {filterContents.map((content, index) => (
         <div key={index}>

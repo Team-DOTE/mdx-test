@@ -4,3 +4,8 @@
   background-color: gainsboro;
   font-size: 15px;
 }
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 1px; /* 폰트 크기를 작게 조절 */
+  }
+}

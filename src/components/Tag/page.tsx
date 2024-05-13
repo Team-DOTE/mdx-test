@@ -9,9 +9,13 @@ interface TagProps {
 export default function Tag({ link, tag }: TagProps) {
   return (
     <div>
-      <Link href={`${link}`}>
-        <div className={styles.tag} >#{tag}</div>
-      </Link>
+      {link === "none" ? (
+        <div className={styles.tag}>#{tag}</div>
+      ) : (
+        <Link href={`${link}`}>
+          <div className={styles.tag}>#{tag}</div>
+        </Link>
+      )}
     </div>
   );
 }

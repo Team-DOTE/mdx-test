@@ -12,7 +12,7 @@ export default function Home() {
       <div>
         <div style={{ display: "flex" }}>
           {tags.map((tag, index) => (
-            <div key={index} style={{margin:"10px"}}>
+            <div key={index} style={{ margin: "5px" }}>
               <Tag link={`tags/${tag.link}`} tag={tag.tag} />
             </div>
           ))}

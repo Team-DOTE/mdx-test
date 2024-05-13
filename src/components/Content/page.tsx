@@ -9,17 +9,20 @@ interface ContentProps {
 }
 
 export default function Content({ link, title, tag }: ContentProps) {
-  console.log(tag);
   return (
     <div>
-      <Link href={link}>
+      
+        <Link href={link}>
         <div className={styles.content}>
-          {title}
-          <div className={styles.tag}>
-            <Tag link={`#`} tag={tag} />
-          </div>
+          <div>{title}</div>
+        
+        <div className={styles.tag}>
+          <Tag link={"none"} tag={tag} />
         </div>
-      </Link>
-    </div>
+        </div>
+        </Link>
+        
+      </div>
+    
   );
 }
